@@ -84,11 +84,11 @@ jobs:
           timeout: 1
           max-score: 2
 
-      - name: Test EBaz enum
+      - name: Test EBaz.java enum
         id: test-baz-class
         uses: classroom-resources/autograding-command-grader@v1
         with:
-          test-name: Test EBaz enum
+          test-name: Test EBaz.java enum
           setup-command: ''
           command: mvn -B -q -fae test -Dtest=EBazTest#doAllTests --file pom.xml
           timeout: 1
